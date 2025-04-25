@@ -1,0 +1,1 @@
+{"_invocation_id": "e3e90dad-0958-453f-b3b2-8899c53d1e9d", "linked": {"0": {"name": "model.dbt_health.stg_patients", "type": "model"}, "1": {"name": "model.dbt_health.stg_admissions", "type": "model"}, "2": {"name": "model.dbt_health.fct_readmissions", "type": "model"}}}

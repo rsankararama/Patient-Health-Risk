@@ -1,0 +1,9 @@
+# R packages
+tidyverse
+glm
+readr
+ggplot2
+
+# DBT
+dbt-core
+psycopg2

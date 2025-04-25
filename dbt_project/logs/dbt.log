@@ -1,0 +1,454 @@
+[0m20:55:37.528149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020870417390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020873706810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020870425850>]}
+
+
+============================== 20:55:37.538741 | 183528d4-c781-4721-8fdc-720381964dc2 ==============================
+[0m20:55:37.538741 [info ] [MainThread]: Running with dbt=1.9.4
+[0m20:55:37.539734 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\rahul\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init dbt_health', 'send_anonymous_usage_stats': 'True'}
+[0m20:55:37.616153 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/rahul/.dbt')}
+[0m20:55:37.618138 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:55:37.627842 [debug] [MainThread]: Starter project path: C:\Users\rahul\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m20:55:37.804937 [info ] [MainThread]: 
+Your new dbt project "dbt_health" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:55:37.805938 [info ] [MainThread]: Setting up your profile.
+[0m20:57:53.764679 [info ] [MainThread]: Profile dbt_health written to C:\Users\rahul\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:57:53.766679 [debug] [MainThread]: Command `dbt init` succeeded at 20:57:53.766679 after 136.77 seconds
+[0m20:57:53.767679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208738103D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002086CDBFFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208737FFAD0>]}
+[0m20:57:53.769683 [debug] [MainThread]: Flushing usage events
+[0m20:57:53.999316 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:01:58.160787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB37B63090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3C06AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3C5A1C50>]}
+
+
+============================== 21:01:58.164801 | 1551ad2c-8e6f-4b09-b874-07d87371c8d1 ==============================
+[0m21:01:58.164801 [info ] [MainThread]: Running with dbt=1.9.4
+[0m21:01:58.166273 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\rahul\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:01:58.188699 [info ] [MainThread]: dbt version: 1.9.4
+[0m21:01:58.188699 [info ] [MainThread]: python version: 3.11.5
+[0m21:01:58.189910 [info ] [MainThread]: python path: C:\Users\rahul\AppData\Local\Programs\Python\Python311\python.exe
+[0m21:01:58.190153 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m21:01:58.246225 [info ] [MainThread]: Using profiles dir at C:\Users\rahul\.dbt
+[0m21:01:58.247061 [info ] [MainThread]: Using profiles.yml file at C:\Users\rahul\.dbt\profiles.yml
+[0m21:01:58.247970 [info ] [MainThread]: Using dbt_project.yml file at D:\Patient_EMR\dbt_health\dbt_project.yml
+[0m21:01:58.249261 [info ] [MainThread]: adapter type: postgres
+[0m21:01:58.249261 [info ] [MainThread]: adapter version: 1.9.0
+[0m21:01:58.250272 [info ] [MainThread]: Configuration:
+[0m21:01:58.250272 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:01:58.252271 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:01:58.253269 [info ] [MainThread]: Required dependencies:
+[0m21:01:58.253269 [debug] [MainThread]: Executing "git --help"
+[0m21:01:58.289979 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:01:58.290981 [debug] [MainThread]: STDERR: "b''"
+[0m21:01:58.290981 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:01:58.291992 [info ] [MainThread]: Connection:
+[0m21:01:58.292979 [info ] [MainThread]:   host: postgres
+[0m21:01:58.292979 [info ] [MainThread]:   port: 5432
+[0m21:01:58.639016 [info ] [MainThread]:   user: postgres
+[0m21:01:58.640964 [info ] [MainThread]:   database: emr_project
+[0m21:01:58.641982 [info ] [MainThread]:   schema: public
+[0m21:01:58.643971 [info ] [MainThread]:   connect_timeout: 10
+[0m21:01:58.645964 [info ] [MainThread]:   role: None
+[0m21:01:58.646963 [info ] [MainThread]:   search_path: None
+[0m21:01:58.648987 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:01:58.650008 [info ] [MainThread]:   sslmode: None
+[0m21:01:58.651068 [info ] [MainThread]:   sslcert: None
+[0m21:01:58.652960 [info ] [MainThread]:   sslkey: None
+[0m21:01:58.654965 [info ] [MainThread]:   sslrootcert: None
+[0m21:01:58.655980 [info ] [MainThread]:   application_name: dbt
+[0m21:01:58.657998 [info ] [MainThread]:   retries: 1
+[0m21:01:58.659979 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m21:01:59.360457 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:02:04.306233 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:02:04.308223 [debug] [MainThread]: On debug: select 1 as id
+[0m21:02:04.309227 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:02:11.592742 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "postgres" to address: No such host is known. 
+
+[0m21:02:14.300158 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m21:02:14.301248 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m21:02:14.302289 [debug] [MainThread]: On debug: No close available on handle
+[0m21:02:14.302850 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:02:14.303372 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:02:14.304431 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Patient_EMR\dbt_health\dbt_project.yml> not found
+
+[0m21:02:14.305000 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "postgres" to address: No such host is known. 
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:02:14.306574 [debug] [MainThread]: Command `dbt debug` failed at 21:02:14.305540 after 16.24 seconds
+[0m21:02:14.307115 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:02:14.308115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3C5A1E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3C5A2310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB35B3F3D0>]}
+[0m21:02:14.310628 [debug] [MainThread]: Flushing usage events
+[0m21:02:14.517483 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:10:38.887714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA033550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA0598D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA05A8D0>]}
+
+
+============================== 21:10:38.892233 | 838289e7-b682-40f8-bd64-cfc92f90cac5 ==============================
+[0m21:10:38.892233 [info ] [MainThread]: Running with dbt=1.9.4
+[0m21:10:38.893234 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Patient_EMR\\dbt_health\\logs', 'profiles_dir': 'C:\\Users\\rahul\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m21:10:39.159565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '838289e7-b682-40f8-bd64-cfc92f90cac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA1B5610>]}
+[0m21:10:39.208072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '838289e7-b682-40f8-bd64-cfc92f90cac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA06E090>]}
+[0m21:10:39.210017 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m21:10:39.412510 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m21:10:39.414511 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:10:39.414511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '838289e7-b682-40f8-bd64-cfc92f90cac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD9E46450>]}
+[0m21:10:41.988744 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_health.example
+[0m21:10:41.996758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '838289e7-b682-40f8-bd64-cfc92f90cac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA53A350>]}
+[0m21:10:42.073763 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Patient_EMR\dbt_health\target\manifest.json
+[0m21:10:42.171279 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Patient_EMR\dbt_health\target\semantic_manifest.json
+[0m21:10:42.231163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '838289e7-b682-40f8-bd64-cfc92f90cac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA588DD0>]}
+[0m21:10:42.232167 [info ] [MainThread]: Found 433 macros
+[0m21:10:42.234070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '838289e7-b682-40f8-bd64-cfc92f90cac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FDA4D5450>]}
+[0m21:10:42.237163 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m21:10:42.239071 [debug] [MainThread]: Command end result
+[0m21:10:42.276876 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Patient_EMR\dbt_health\target\manifest.json
+[0m21:10:42.280878 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Patient_EMR\dbt_health\target\semantic_manifest.json
+[0m21:10:42.295575 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Patient_EMR\dbt_health\target\run_results.json
+[0m21:10:42.297575 [debug] [MainThread]: Command `dbt run` succeeded at 21:10:42.297575 after 3.51 seconds
+[0m21:10:42.299129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD35FFF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD35FF390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD35FFF50>]}
+[0m21:10:42.300141 [debug] [MainThread]: Flushing usage events
+[0m21:10:42.543999 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:13:19.054331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027957833650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027957881A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027957880890>]}
+
+
+============================== 21:13:19.063576 | e3e90dad-0958-453f-b3b2-8899c53d1e9d ==============================
+[0m21:13:19.063576 [info ] [MainThread]: Running with dbt=1.9.4
+[0m21:13:19.064592 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\rahul\\.dbt', 'log_path': 'D:\\Patient_EMR\\dbt_health\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:13:19.316782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279579B6E10>]}
+[0m21:13:19.393456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027954472810>]}
+[0m21:13:19.395141 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m21:13:19.672523 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m21:13:19.968736 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m21:13:19.969625 [debug] [MainThread]: Partial parsing: added file: dbt_health://models\stg_patients.sql
+[0m21:13:19.970666 [debug] [MainThread]: Partial parsing: added file: dbt_health://models\stg_admissions.sql
+[0m21:13:19.970666 [debug] [MainThread]: Partial parsing: added file: dbt_health://models\fct_readmissions.sql
+[0m21:13:20.304710 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_health.example
+[0m21:13:20.314709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027958D7D290>]}
+[0m21:13:20.387402 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Patient_EMR\dbt_health\target\manifest.json
+[0m21:13:20.396006 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Patient_EMR\dbt_health\target\semantic_manifest.json
+[0m21:13:20.476045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027958ED3A90>]}
+[0m21:13:20.476045 [info ] [MainThread]: Found 3 models, 433 macros
+[0m21:13:20.477050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027958F143D0>]}
+[0m21:13:20.480041 [info ] [MainThread]: 
+[0m21:13:20.481265 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:13:20.483284 [info ] [MainThread]: 
+[0m21:13:20.484286 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m21:13:20.491415 [debug] [ThreadPool]: Acquiring new postgres connection 'list_emr_project'
+[0m21:13:20.593007 [debug] [ThreadPool]: Using postgres connection "list_emr_project"
+[0m21:13:20.594120 [debug] [ThreadPool]: On list_emr_project: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "connection_name": "list_emr_project"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:13:20.595112 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:13:20.691342 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.097 seconds
+[0m21:13:20.693363 [debug] [ThreadPool]: On list_emr_project: Close
+[0m21:13:20.695343 [debug] [ThreadPool]: Acquiring new postgres connection 'list_emr_project_public'
+[0m21:13:20.705386 [debug] [ThreadPool]: Using postgres connection "list_emr_project_public"
+[0m21:13:20.706391 [debug] [ThreadPool]: On list_emr_project_public: BEGIN
+[0m21:13:20.707390 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:13:20.754354 [debug] [ThreadPool]: SQL status: BEGIN in 0.047 seconds
+[0m21:13:20.755439 [debug] [ThreadPool]: Using postgres connection "list_emr_project_public"
+[0m21:13:20.755439 [debug] [ThreadPool]: On list_emr_project_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "connection_name": "list_emr_project_public"} */
+select
+      'emr_project' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'emr_project' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'emr_project' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m21:13:20.775855 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.020 seconds
+[0m21:13:20.776855 [debug] [ThreadPool]: On list_emr_project_public: ROLLBACK
+[0m21:13:20.777853 [debug] [ThreadPool]: On list_emr_project_public: Close
+[0m21:13:20.785782 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:20.786797 [debug] [MainThread]: On master: BEGIN
+[0m21:13:20.787796 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:13:20.829611 [debug] [MainThread]: SQL status: BEGIN in 0.042 seconds
+[0m21:13:20.829611 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:20.830656 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:13:20.848132 [debug] [MainThread]: SQL status: SELECT 0 in 0.017 seconds
+[0m21:13:20.849137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279579B9850>]}
+[0m21:13:20.850224 [debug] [MainThread]: On master: ROLLBACK
+[0m21:13:20.851229 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:20.852235 [debug] [MainThread]: On master: BEGIN
+[0m21:13:20.853245 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m21:13:20.854223 [debug] [MainThread]: On master: COMMIT
+[0m21:13:20.854223 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:20.854223 [debug] [MainThread]: On master: COMMIT
+[0m21:13:20.855222 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:13:20.855222 [debug] [MainThread]: On master: Close
+[0m21:13:20.897540 [debug] [Thread-1 (]: Began running node model.dbt_health.fct_readmissions
+[0m21:13:20.898541 [info ] [Thread-1 (]: 1 of 3 START sql view model public.fct_readmissions ............................ [RUN]
+[0m21:13:20.900538 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.dbt_health.fct_readmissions'
+[0m21:13:20.901540 [debug] [Thread-1 (]: Began compiling node model.dbt_health.fct_readmissions
+[0m21:13:20.915625 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_health.fct_readmissions"
+[0m21:13:20.931039 [debug] [Thread-1 (]: Began executing node model.dbt_health.fct_readmissions
+[0m21:13:20.995683 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_health.fct_readmissions"
+[0m21:13:20.998689 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.fct_readmissions"
+[0m21:13:20.999687 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: BEGIN
+[0m21:13:21.000691 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:13:21.046294 [debug] [Thread-1 (]: SQL status: BEGIN in 0.046 seconds
+[0m21:13:21.047297 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.fct_readmissions"
+[0m21:13:21.048306 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.fct_readmissions"} */
+
+  create view "emr_project"."public"."fct_readmissions__dbt_tmp"
+    
+    
+  as (
+    WITH visit_counts AS (
+  SELECT
+    subject_id,
+    COUNT(*) AS total_visits
+  FROM public.admissions
+  GROUP BY subject_id
+)
+
+SELECT
+  p.subject_id,
+  p.gender,
+  EXTRACT(YEAR FROM AGE(p.dob)) AS age,
+  v.total_visits,
+  CASE WHEN v.total_visits > 1 THEN TRUE ELSE FALSE END AS readmitted_flag
+FROM public.patients p
+JOIN visit_counts v ON p.subject_id = v.subject_id
+  );
+[0m21:13:21.078243 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.030 seconds
+[0m21:13:21.084856 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.fct_readmissions"
+[0m21:13:21.085772 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.fct_readmissions"} */
+alter table "emr_project"."public"."fct_readmissions__dbt_tmp" rename to "fct_readmissions"
+[0m21:13:21.090066 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m21:13:21.101064 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: COMMIT
+[0m21:13:21.102065 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.fct_readmissions"
+[0m21:13:21.102065 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: COMMIT
+[0m21:13:21.104546 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m21:13:21.109556 [debug] [Thread-1 (]: Applying DROP to: "emr_project"."public"."fct_readmissions__dbt_backup"
+[0m21:13:21.113556 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.fct_readmissions"
+[0m21:13:21.114556 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.fct_readmissions"} */
+drop view if exists "emr_project"."public"."fct_readmissions__dbt_backup" cascade
+[0m21:13:21.116559 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m21:13:21.120674 [debug] [Thread-1 (]: On model.dbt_health.fct_readmissions: Close
+[0m21:13:21.125791 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027959204790>]}
+[0m21:13:21.128799 [info ] [Thread-1 (]: 1 of 3 OK created sql view model public.fct_readmissions ....................... [[32mCREATE VIEW[0m in 0.22s]
+[0m21:13:21.130888 [debug] [Thread-1 (]: Finished running node model.dbt_health.fct_readmissions
+[0m21:13:21.131842 [debug] [Thread-1 (]: Began running node model.dbt_health.stg_admissions
+[0m21:13:21.132886 [info ] [Thread-1 (]: 2 of 3 START sql view model public.stg_admissions .............................. [RUN]
+[0m21:13:21.134839 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_health.fct_readmissions, now model.dbt_health.stg_admissions)
+[0m21:13:21.135794 [debug] [Thread-1 (]: Began compiling node model.dbt_health.stg_admissions
+[0m21:13:21.143414 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_health.stg_admissions"
+[0m21:13:21.146117 [debug] [Thread-1 (]: Began executing node model.dbt_health.stg_admissions
+[0m21:13:21.154180 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_health.stg_admissions"
+[0m21:13:21.155796 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_admissions"
+[0m21:13:21.156914 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: BEGIN
+[0m21:13:21.157460 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:13:21.201798 [debug] [Thread-1 (]: SQL status: BEGIN in 0.044 seconds
+[0m21:13:21.202929 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_admissions"
+[0m21:13:21.203448 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.stg_admissions"} */
+
+  create view "emr_project"."public"."stg_admissions__dbt_tmp"
+    
+    
+  as (
+    SELECT
+  subject_id,
+  hadm_id,
+  admittime,
+  dischtime,
+  DATE_PART('day', dischtime - admittime) AS los,
+  admission_type,
+  insurance
+FROM public.admissions
+  );
+[0m21:13:21.210126 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.006 seconds
+[0m21:13:21.213698 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_admissions"
+[0m21:13:21.214325 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.stg_admissions"} */
+alter table "emr_project"."public"."stg_admissions__dbt_tmp" rename to "stg_admissions"
+[0m21:13:21.215575 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m21:13:21.217206 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: COMMIT
+[0m21:13:21.217751 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_admissions"
+[0m21:13:21.218280 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: COMMIT
+[0m21:13:21.219866 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m21:13:21.222248 [debug] [Thread-1 (]: Applying DROP to: "emr_project"."public"."stg_admissions__dbt_backup"
+[0m21:13:21.223482 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_admissions"
+[0m21:13:21.224099 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.stg_admissions"} */
+drop view if exists "emr_project"."public"."stg_admissions__dbt_backup" cascade
+[0m21:13:21.224776 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m21:13:21.226534 [debug] [Thread-1 (]: On model.dbt_health.stg_admissions: Close
+[0m21:13:21.226534 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027958D7FC90>]}
+[0m21:13:21.227539 [info ] [Thread-1 (]: 2 of 3 OK created sql view model public.stg_admissions ......................... [[32mCREATE VIEW[0m in 0.09s]
+[0m21:13:21.228542 [debug] [Thread-1 (]: Finished running node model.dbt_health.stg_admissions
+[0m21:13:21.229548 [debug] [Thread-1 (]: Began running node model.dbt_health.stg_patients
+[0m21:13:21.230547 [info ] [Thread-1 (]: 3 of 3 START sql view model public.stg_patients ................................ [RUN]
+[0m21:13:21.231547 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_health.stg_admissions, now model.dbt_health.stg_patients)
+[0m21:13:21.231547 [debug] [Thread-1 (]: Began compiling node model.dbt_health.stg_patients
+[0m21:13:21.233546 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_health.stg_patients"
+[0m21:13:21.234547 [debug] [Thread-1 (]: Began executing node model.dbt_health.stg_patients
+[0m21:13:21.239639 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_health.stg_patients"
+[0m21:13:21.240641 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_patients"
+[0m21:13:21.241638 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: BEGIN
+[0m21:13:21.241638 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:13:21.284203 [debug] [Thread-1 (]: SQL status: BEGIN in 0.042 seconds
+[0m21:13:21.285201 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_patients"
+[0m21:13:21.285201 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.stg_patients"} */
+
+  create view "emr_project"."public"."stg_patients__dbt_tmp"
+    
+    
+  as (
+    SELECT
+  subject_id,
+  gender,
+  dob,
+  EXTRACT(YEAR FROM AGE(dob)) AS age
+FROM public.patients
+  );
+[0m21:13:21.292261 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.006 seconds
+[0m21:13:21.353974 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_patients"
+[0m21:13:21.355975 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.stg_patients"} */
+alter table "emr_project"."public"."stg_patients__dbt_tmp" rename to "stg_patients"
+[0m21:13:21.358373 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m21:13:21.360446 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: COMMIT
+[0m21:13:21.362447 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_patients"
+[0m21:13:21.363448 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: COMMIT
+[0m21:13:21.367185 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m21:13:21.371907 [debug] [Thread-1 (]: Applying DROP to: "emr_project"."public"."stg_patients__dbt_backup"
+[0m21:13:21.373659 [debug] [Thread-1 (]: Using postgres connection "model.dbt_health.stg_patients"
+[0m21:13:21.375750 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbt_health", "target_name": "dev", "node_id": "model.dbt_health.stg_patients"} */
+drop view if exists "emr_project"."public"."stg_patients__dbt_backup" cascade
+[0m21:13:21.376768 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m21:13:21.380778 [debug] [Thread-1 (]: On model.dbt_health.stg_patients: Close
+[0m21:13:21.382670 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e3e90dad-0958-453f-b3b2-8899c53d1e9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027953B923D0>]}
+[0m21:13:21.383761 [info ] [Thread-1 (]: 3 of 3 OK created sql view model public.stg_patients ........................... [[32mCREATE VIEW[0m in 0.15s]
+[0m21:13:21.384745 [debug] [Thread-1 (]: Finished running node model.dbt_health.stg_patients
+[0m21:13:21.386667 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:21.387666 [debug] [MainThread]: On master: BEGIN
+[0m21:13:21.387666 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:13:21.432274 [debug] [MainThread]: SQL status: BEGIN in 0.044 seconds
+[0m21:13:21.432274 [debug] [MainThread]: On master: COMMIT
+[0m21:13:21.432274 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:21.433375 [debug] [MainThread]: On master: COMMIT
+[0m21:13:21.433375 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:13:21.434315 [debug] [MainThread]: On master: Close
+[0m21:13:21.436279 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:13:21.437277 [debug] [MainThread]: Connection 'list_emr_project' was properly closed.
+[0m21:13:21.437277 [debug] [MainThread]: Connection 'list_emr_project_public' was properly closed.
+[0m21:13:21.438277 [debug] [MainThread]: Connection 'model.dbt_health.stg_patients' was properly closed.
+[0m21:13:21.438277 [info ] [MainThread]: 
+[0m21:13:21.439276 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.95 seconds (0.95s).
+[0m21:13:21.441359 [debug] [MainThread]: Command end result
+[0m21:13:21.490755 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Patient_EMR\dbt_health\target\manifest.json
+[0m21:13:21.494855 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Patient_EMR\dbt_health\target\semantic_manifest.json
+[0m21:13:21.507807 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Patient_EMR\dbt_health\target\run_results.json
+[0m21:13:21.508764 [info ] [MainThread]: 
+[0m21:13:21.509758 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:13:21.511850 [info ] [MainThread]: 
+[0m21:13:21.512857 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m21:13:21.514845 [debug] [MainThread]: Command `dbt run` succeeded at 21:13:21.514845 after 2.57 seconds
+[0m21:13:21.515872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279539B4E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279579D0150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027950DDFF90>]}
+[0m21:13:21.516862 [debug] [MainThread]: Flushing usage events
+[0m21:13:21.723170 [debug] [MainThread]: An error was encountered while trying to flush usage events
