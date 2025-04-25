@@ -18,3 +18,13 @@
 ## 📊 Visuals
 - Looker Studio:
 ![image](https://github.com/user-attachments/assets/7032a32e-7739-4526-b462-db9a52308a88)
+
+## 📁 Repository Contents
+- `dbt_project/`: DBT models and config for data transformation
+- `r_scripts/readmission_analysis.R`: R code for modeling and EDA
+- `exports/readmission_cleaned.csv`: Cleaned dataset for visualization
+- `dashboard/`: Dashboard assets
+
+## 🧠 Insights
+- Age, number of diagnoses, and chronic conditions significantly influenced readmission risk
+- Strategic dashboard helps in identifying high-risk patients early for better care delivery
